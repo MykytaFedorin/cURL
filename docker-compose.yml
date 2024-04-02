@@ -1,4 +1,4 @@
-version: '3'
+version: '3.0'
 
 services:
   nginx:
@@ -20,11 +20,9 @@ services:
       - mysql
 
   mysql:
-    image: mysql:8.0.36
+    build: ./.docker/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
-      MYSQL_ROOT_HOST: "%"
-      MYSQL_DATABASE: demo 
+      MYSQL_ROOT_PASSWORD: root
     volumes:
       - ./.docker/mysql/my.cnf:/etc/mysql/my.cnf
       - mysqldata:/var/lib/mysql 
@@ -45,4 +43,4 @@ services:
 
 volumes:
 
-  mysqldata:
+    mysqldata:

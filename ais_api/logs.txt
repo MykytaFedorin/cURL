@@ -1,0 +1,162 @@
+SQL: [140] INSERT INTO subjects (name, day, room , subject_type)
+                                            VALUES  (:name, :day :room, :subject_type)
+Params:  4
+Key: Name: [5] :name
+paramno=-1
+name=[5] ":name"
+is_param=1
+param_type=2
+Key: Name: [4] :day
+paramno=-1
+name=[4] ":day"
+is_param=1
+param_type=2
+Key: Name: [5] :room
+paramno=-1
+name=[5] ":room"
+is_param=1
+param_type=2
+Key: Name: [13] :subject_type
+paramno=-1
+name=[13] ":subject_type"
+is_param=1
+param_type=2
+SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1SQL: [140] INSERT INTO subjects (name, day, room , subject_type)
+                                            VALUES  (:name, :day :room, :subject_type)
+Params:  4
+Key: Name: [5] :name
+paramno=-1
+name=[5] ":name"
+is_param=1
+param_type=2
+Key: Name: [4] :day
+paramno=-1
+name=[4] ":day"
+is_param=1
+param_type=2
+Key: Name: [5] :room
+paramno=-1
+name=[5] ":room"
+is_param=1
+param_type=2
+Key: Name: [13] :subject_type
+paramno=-1
+name=[13] ":subject_type"
+is_param=1
+param_type=2
+SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1SQL: [140] INSERT INTO subjects (name, day, room , subject_type)
+                                            VALUES  (:name, :day :room, :subject_type)
+Params:  4
+Key: Name: [5] :name
+paramno=-1
+name=[5] ":name"
+is_param=1
+param_type=2
+Key: Name: [4] :day
+paramno=-1
+name=[4] ":day"
+is_param=1
+param_type=2
+Key: Name: [5] :room
+paramno=-1
+name=[5] ":room"
+is_param=1
+param_type=2
+Key: Name: [13] :subject_type
+paramno=-1
+name=[13] ":subject_type"
+is_param=1
+param_type=2
+SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1SQL: [140] INSERT INTO subjects (name, day, room , subject_type)
+                                            VALUES  (:name, :day :room, :subject_type)
+Params:  4
+Key: Name: [5] :name
+paramno=-1
+name=[5] ":name"
+is_param=1
+param_type=2
+Key: Name: [4] :day
+paramno=-1
+name=[4] ":day"
+is_param=1
+param_type=2
+Key: Name: [5] :room
+paramno=-1
+name=[5] ":room"
+is_param=1
+param_type=2
+Key: Name: [13] :subject_type
+paramno=-1
+name=[13] ":subject_type"
+is_param=1
+param_type=2
+SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1SQL: [140] INSERT INTO subjects (name, day, room , subject_type)
+                                            VALUES  (:name, :day :room, :subject_type)
+Params:  4
+Key: Name: [5] :name
+paramno=-1
+name=[5] ":name"
+is_param=1
+param_type=2
+Key: Name: [4] :day
+paramno=-1
+name=[4] ":day"
+is_param=1
+param_type=2
+Key: Name: [5] :room
+paramno=-1
+name=[5] ":room"
+is_param=1
+param_type=2
+Key: Name: [13] :subject_type
+paramno=-1
+name=[13] ":subject_type"
+is_param=1
+param_type=2
+SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1SQL: [140] INSERT INTO subjects (name, day, room , subject_type)
+                                            VALUES  (:name, :day :room, :subject_type)
+Params:  4
+Key: Name: [5] :name
+paramno=-1
+name=[5] ":name"
+is_param=1
+param_type=2
+Key: Name: [4] :day
+paramno=-1
+name=[4] ":day"
+is_param=1
+param_type=2
+Key: Name: [5] :room
+paramno=-1
+name=[5] ":room"
+is_param=1
+param_type=2
+Key: Name: [13] :subject_type
+paramno=-1
+name=[13] ":subject_type"
+is_param=1
+param_type=2
+SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1SQL: [140] INSERT INTO subjects (name, day, room , subject_type)
+                                            VALUES  (:name, :day :room, :subject_type)
+Params:  4
+Key: Name: [5] :name
+paramno=-1
+name=[5] ":name"
+is_param=1
+param_type=2
+Key: Name: [4] :day
+paramno=-1
+name=[4] ":day"
+is_param=1
+param_type=2
+Key: Name: [5] :room
+paramno=-1
+name=[5] ":room"
+is_param=1
+param_type=2
+Key: Name: [13] :subject_type
+paramno=-1
+name=[13] ":subject_type"
+is_param=1
+param_type=2
+SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1success
