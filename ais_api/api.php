@@ -28,12 +28,22 @@ switch ($requestMethod) {
         }
         break;
     case 'PUT':
-        // Обновление существующей записи
-        // Ваш код для обновления записи
+        if($resource==="subjects"){
+            include 'updateSubject.php';
+        }
+        else{ 
+            http_response_code(404);
+            echo json_encode(array("message" => "Resource not found.", "path" => $resource));
+        }
         break;
     case 'DELETE':
-        // Удаление записи
-        // Ваш код для удаления записи
+        if($resource==="subjects"){
+            include 'deleteSubject.php';
+        }
+        else{ 
+            http_response_code(404);
+            echo json_encode(array("message" => "Resource not found.", "path" => $resource));
+        }
         break;
     default:
         http_response_code(405);
