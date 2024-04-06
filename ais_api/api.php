@@ -1,7 +1,7 @@
 <?php
 require_once "../../../.config/zadanie2/config.global.php";
 
-// Обработка запроса
+// Обработка запр
 $requestMethod = $_SERVER["REQUEST_METHOD"];
 
 $path = $_SERVER["REQUEST_URI"];

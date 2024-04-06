@@ -3,6 +3,8 @@ require_once "../../../.config/zadanie2/config.global.php";
 function getToken(){    
     $username = $_ENV["USERNAME"];
     $password = $_ENV["PASSWORD"];
+    echo $username;
+    echo $password;
     $url_login_page = 'https://is.stuba.sk/auth/';
     $ch = curl_init();
     $postData = array(
@@ -69,6 +71,7 @@ function getSchedule(){
     // Закрытие cURL-сессии
     curl_close($ch);
 }
+
 function getSubjectObj($subject, $xpath){
         $day = findDayOfSubject($subject, $xpath);
         $class = $subject->getAttribute("class");

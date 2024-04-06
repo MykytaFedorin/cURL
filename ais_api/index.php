@@ -25,8 +25,7 @@
 <table id="subjectTable">
     <thead>
         <tr>
-            <th>Subject ID</th>
-            <th>Name</th>
+            <th>Subject ID</th>            <th>Name</th>
             <th>Day</th>
             <th>Room</th>
             <th>Subject Type</th>
