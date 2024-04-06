@@ -13,10 +13,10 @@
             $thesises = getThesises($url);
             if($thesises){
                 $filteredThesises = filterThesises($thesises, $thesis_type, $department);
-                # echo json_encode($filteredThesises);
+                echo json_encode($filteredThesises);
             }
             else{
-                echo "nic";
+                #echo "nic";
             }
         }
         catch(Exception $e){

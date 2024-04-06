@@ -49,40 +49,7 @@
         </thead>
         <tbody></tbody>
     </table>
-    <script>
-        $(document).ready(function() {
-            $('#loader').show();
-            var requestData = {
-        department: "Institute of Computer Science and Mathematics - FEI",
-        thesis_type: "Dissertation thesis"
-    };
-            $.ajax({
-                url: 'https://node34.webte.fei.stuba.sk/zadanie2/prace_api/prace',
-                method: 'POST',
-                dataType: 'json',
-                data: JSON.stringify(requestData),
-                success: function(response) {
-                    $('#loader').hide();
-                    console.log("au");
-                    var table = $('#thesisTable').DataTable({
-                        data: response,
-                        columns: [
-                            { data: 'thesis_type' },
-                            { data: 'topic' },
-                            { data: 'supervisor' },
-                            { data: 'department' },
-                            { data: 'abstract_' },
-                            { data: 'programme' }
-                        ]
-                    });
-                },
-                error: function(xhr, status, error) {
-                    $('#loader').hide();
-                    console.error(xhr.responseText);
-                }
-            });
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
 

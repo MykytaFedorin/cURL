@@ -92,34 +92,24 @@
     function getRowValue($row, $xpath){
         return $xpath->query("./td", $row)->item(1)->nodeValue; 
     }
-    function getThesisInfo($element, $xpath){
+    function getAbstractURL($element, $xpath){
         $url_elements = $xpath->query("descendant::a", $element); 
         $url = "https://is.stuba.sk" . $url_elements->item(1)->getAttribute("href");
-        $page = getPage($url);
-        $xpath = getXPATH($page);
-
-        $main_table = $xpath->query("//tbody")->item(0);
-        $maint_items = $xpath->query("//tr", $main_table);
-        $maint_values = array();
-        foreach($maint_items as $row){
-            $value = getRowValue($row, $xpath);
-            array_push($maint_values, $value);
-        }
-        
-        $thesis_type = $maint_values[0];
-        $topic = $maint_values[1]; 
-        $supervisor = $maint_values[4];
-        $department = $maint_values[6];
-        $abstract_ = $maint_values[10];
-        $second_table = $xpath->query("//tbody")->item(1);
-        $programme = $second_table->nodeValue;
-        return new Thesis($thesis_type, $topic, $supervisor,
-                          $department, $programme, $abstract_);
-        
+        return $url;
     }
     function getThesisObject($element, $xpath){
-        return getThesisInfo($element, $xpath);
-        
+        $cells = $xpath->query("./td", $element);
+        $ord = $cells->item(1)->nodeValue;
+        $type = $cells->item(1)->nodeValue;
+        $topic = $cells->item(2)->nodeValue;
+        $supervisor = $cells->item(3)->nodeValue;
+        $department = $cells->item(4)->nodeValue;
+        $programme = $cells->item(5)->nodeValue;
+        $url = getAbstractURL($element, $xpath);
+        # $url = '';
+
+        return new Thesis($type, $topic, $supervisor,
+                          $department, $programme, $url);
     }
 
     function getThesises($url){
@@ -129,15 +119,7 @@
         $thesisObjects = array();
         foreach($thesisElements as $element){
             $thesis = getThesisObject($element, $xpath);
-            $obj_assoc = array("thesis_type"=>$thesis->thesis_type,
-                "topic" => $thesis->topic,
-                "supervisor" => $thesis->supervisor,
-                "department" => $thesis->department, 
-                "abstract_" => $thesis->abstract_,
-                "programme" => $thesis->programme
-             );
-            echo json_encode($obj_assoc);
-            array_push($thesisObjects, $obj_assoc); 
+            array_push($thesisObjects, $thesis); 
         }
         return $thesisObjects;
     
@@ -146,8 +128,9 @@
     function filterThesises($thesises, $thesis_type, $department){
         $filtered_thesises = array(); 
         foreach($thesises as $thesis){
-            if($thesis->thesis_type == $thesis_type && 
-               $thesis->department == $department){
+            # echo $thesis->thesis_type . '==' . $thesis_type;
+            # echo $thesis->department . '==' . $department; 
+            if($thesis->thesis_type === $thesis_type && $thesis->department === $department){
                 array_push($filtered_thesises, $thesis); 
             } 
         }

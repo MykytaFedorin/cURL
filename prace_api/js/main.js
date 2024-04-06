@@ -1,7 +1,7 @@
 async function fetchData() {
-    var requestData = {
-        "department": "Institute of Computer Science and Mathematics - FEI",
-        "thesis_type": "Dissertation thesis"
+    const requestData = {
+        department: "Institute of Computer Science and Mathematics (FEI)",
+        thesis_type: "BT"
     };
 
     try {
@@ -19,7 +19,8 @@ async function fetchData() {
 
         const responseData = await response.json();
         $('#loader').hide();
-        console.log("au");
+        console.log(response);
+        console.log(responseData);
 
         $('#thesisTable').DataTable({
             data: responseData,
@@ -28,7 +29,7 @@ async function fetchData() {
                 { data: 'topic' },
                 { data: 'supervisor' },
                 { data: 'department' },
-                { data: 'abstract_' },
+                { data: 'abstractUrl' },
                 { data: 'programme' }
             ]
         });
