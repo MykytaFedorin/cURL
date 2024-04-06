@@ -6,17 +6,15 @@
     function getThesisesBy($postData){
         $department = $postData["department"];
         $thesis_type = $postData["thesis_type"];
-        if(isset($department) && is_string($department) &&
-           isset($thesis_type) && is_string($thesis_type)){     
-
+        try{
             $url = getDepartmentUrl($department);
-            $thesises = getThesises($url);
-            $filteredThesises = filterThesises($thesises, $thesis_type, $department);
-            echo json_encode($filteredThesises);
         }
-        else{ 
-            throw new ThesisRequestException(); 
+        catch(ThesisRequestException $e){
+            throw $e; 
         }
+        $thesises = getThesises($url);
+        $filteredThesises = filterThesises($thesises, $thesis_type, $department);
+        return json_encode($filteredThesises);
         # echo json_encode(array("Empty request body error")); 
     }
 ?>

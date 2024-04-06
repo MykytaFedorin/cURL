@@ -2,6 +2,7 @@
     require_once("../../../.config/zadanie2/config.global.php");
     require_once("../load_dotenv.php");
     require_once("Thesis.php");
+    require_once("exceptions/ThesisRequestException.php");
     # require_once "../ais_api/download_schedule_.php";
 
     function getToken(){    
@@ -109,7 +110,12 @@
           "Institute of Robotics and Cybernetics (FEI)" => 356
         );
         $url = "https://is.stuba.sk/auth/pracoviste/prehled_temat.pl?pracoviste=";
-        return $url . $dict_[$dep] . ';';
+        if(isset($dict_[$dep]) && is_string($dep) && $dep){
+            return $url . $dict_[$dep] . ';';
+        }
+        else{
+            throw new ThesisRequestException();
+        }
     }
     function getThesisObject($element, $xpath){
         $cells = $xpath->query("./td", $element);

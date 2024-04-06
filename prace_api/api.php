@@ -16,7 +16,8 @@
             if($resource==="prace"){
                 $postData = json_decode(file_get_contents("php://input"), true);
                 try{
-                    getThesisesBy($postData);
+                    $thesises = getThesisesBy($postData);
+                    echo $thesises;
                 }
                 catch(ThesisRequestException $e){
                     echo json_encode(array("Empty request body error")); 
