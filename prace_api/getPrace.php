@@ -9,14 +9,14 @@
         $thesis_type = $postData["thesis_type"];
         try{ 
             require_once("thesises_module.php");
-            $url = "https://is.stuba.sk/auth/pracoviste/prehled_temat.pl?pracoviste=816;";
+            $url = getDepartmentUrl($department);
             $thesises = getThesises($url);
             if($thesises){
                 $filteredThesises = filterThesises($thesises, $thesis_type, $department);
                 echo json_encode($filteredThesises);
             }
             else{
-                #echo "nic";
+                echo "nic";
             }
         }
         catch(Exception $e){

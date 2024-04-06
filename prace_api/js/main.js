@@ -1,7 +1,9 @@
 async function fetchData() {
+    const dep = $("#departmentSelect").val();
+    const thesisType = $("#thesisTypeSelect").val();
     const requestData = {
-        department: "Institute of Computer Science and Mathematics (FEI)",
-        thesis_type: "BT"
+        department: dep,
+        thesis_type: thesisType
     };
 
     try {
@@ -22,14 +24,15 @@ async function fetchData() {
         console.log(response);
         console.log(responseData);
 
+        if ($.fn.DataTable.isDataTable('#thesisTable')) {
+            // DataTables already initialized, destroy it first
+            $('#thesisTable').DataTable().destroy();
+        }
         $('#thesisTable').DataTable({
             data: responseData,
             columns: [
-                { data: 'thesis_type' },
                 { data: 'topic' },
                 { data: 'supervisor' },
-                { data: 'department' },
-                { data: 'abstractUrl' },
                 { data: 'programme' }
             ]
         });
@@ -39,5 +42,12 @@ async function fetchData() {
     }
 }
 
-fetchData();
+// Получаем кнопку по id
+const refreshButton = document.getElementById('refreshButton');
 
+// Добавляем обработчик события click
+refreshButton.addEventListener('click', async () => {
+    // Вызываем функцию fetchData() при клике на кнопку
+    await fetchData();
+});
+fetchData();

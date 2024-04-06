@@ -36,19 +36,43 @@
 </head>
 <body>
     <div id="loader"></div>
+      <div id="selectGroup">
+        <label for="thesisTypeSelect">Choose thesis type</label>
+        <select id="thesisTypeSelect" name="thesis_type">
+          <option value="BT">BT</option>
+          <option value="MT">MT</option>
+        </select>
+        <label for="departmentSelect">Choose department</label>
+        <select id="departmentSelect" name="department">
+          <option value="Institute of Automotive Mechatronics (FEI)">
+                  Institute of Automotive Mechatronics (FEI)</option>
+          <option value="Institute of Power and Applied Electrical Engineering (FEI)">
+                  Institute of Power and Applied Electrical Engineering (FEI)</option>
+          <option value="Institute of Electronics and Phototonics (FEI)">
+                  Institute of Electronics and Phototonics (FEI)</option>
+          <option value="Institute of Electrical Engineering (FEI)">
+                  Institute of Electrical Engineering (FEI)</option>
+          <option value="Institute of Computer Science and Mathematics (FEI)">
+                  Institute of Computer Science and Mathematics (FEI)</option>
+          <option value="Institute of Nuclear and Physical Engineering (FEI)">
+                  Institute of Nuclear and Physical Engineering (FEI)</option>
+          <option value="Institute of Multimedia Information and Communication Technologies (FEI)">
+                  Institute of Multimedia Information and Communication Technologies (FEI)</option>
+          <option value="Institute of Robotics and Cybernetics (FEI)">
+                  Institute of Robotics and Cybernetics (FEI)</option>
+        </select>
+      </div>
     <table id="thesisTable" class="table table-striped table-bordered" style="width:100%">
         <thead>
             <tr>
-                <th>Thesis Type</th>
                 <th>Topic</th>
                 <th>Supervisor</th>
-                <th>Department</th>
-                <th>Abstract</th>
                 <th>Programme</th>
             </tr>
         </thead>
         <tbody></tbody>
     </table>
+    <button id="refreshButton">GET</button>
     <script src="js/main.js"></script>
 </body>
 </html>

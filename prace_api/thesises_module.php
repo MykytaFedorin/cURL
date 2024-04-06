@@ -97,6 +97,20 @@
         $url = "https://is.stuba.sk" . $url_elements->item(1)->getAttribute("href");
         return $url;
     }
+    function getDepartmentUrl($dep){
+        $dict_ = array( 
+          "Institute of Automotive Mechatronics (FEI)" => 642,
+          "Institute of Power and Applied Electrical Engineering (FEI)" => 548, 
+          "Institute of Electronics and Phototonics (FEI)" => 549,
+          "Institute of Electrical Engineering (FEI)" => 550, 
+          "Institute of Computer Science and Mathematics (FEI)" => 816,
+          "Institute of Nuclear and Physical Engineering (FEI)" => 817,
+          "Institute of Multimedia Information and Communication Technologies (FEI)" => 818,
+          "Institute of Robotics and Cybernetics (FEI)" => 356
+        );
+        $url = "https://is.stuba.sk/auth/pracoviste/prehled_temat.pl?pracoviste=";
+        return $url . $dict_[$dep] . ';';
+    }
     function getThesisObject($element, $xpath){
         $cells = $xpath->query("./td", $element);
         $ord = $cells->item(1)->nodeValue;
@@ -105,11 +119,13 @@
         $supervisor = $cells->item(3)->nodeValue;
         $department = $cells->item(4)->nodeValue;
         $programme = $cells->item(5)->nodeValue;
+        $track = $cells->item(6)->nodeValue;
+        $available = $cells->item(9)->nodeValue;
         $url = getAbstractURL($element, $xpath);
-        # $url = '';
 
         return new Thesis($type, $topic, $supervisor,
-                          $department, $programme, $url);
+                          $department, $programme, $track,
+                          $url, $available);
     }
 
     function getThesises($url){
@@ -128,9 +144,9 @@
     function filterThesises($thesises, $thesis_type, $department){
         $filtered_thesises = array(); 
         foreach($thesises as $thesis){
-            # echo $thesis->thesis_type . '==' . $thesis_type;
-            # echo $thesis->department . '==' . $department; 
-            if($thesis->thesis_type === $thesis_type && $thesis->department === $department){
+          if($thesis->thesis_type === $thesis_type &&
+            $thesis->department === $department &&
+            $thesis->isFree()){
                 array_push($filtered_thesises, $thesis); 
             } 
         }
