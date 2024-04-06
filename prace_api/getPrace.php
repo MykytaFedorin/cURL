@@ -1,26 +1,22 @@
 <?php
+    require_once("thesises_module.php");
+    require_once("exceptions/ThesisRequestException.php");
     header('Content-Type: application/json');
-    $postData = json_decode(file_get_contents("php://input"), true);
-    if(!$postData){
-        echo json_encode(array("Empty request body error")); 
-    }
-    else{ 
+
+    function getThesisesBy($postData){
         $department = $postData["department"];
         $thesis_type = $postData["thesis_type"];
-        try{ 
-            require_once("thesises_module.php");
+        if(isset($department) && is_string($department) &&
+           isset($thesis_type) && is_string($thesis_type)){     
+
             $url = getDepartmentUrl($department);
             $thesises = getThesises($url);
-            if($thesises){
-                $filteredThesises = filterThesises($thesises, $thesis_type, $department);
-                echo json_encode($filteredThesises);
-            }
-            else{
-                echo "nic";
-            }
+            $filteredThesises = filterThesises($thesises, $thesis_type, $department);
+            echo json_encode($filteredThesises);
         }
-        catch(Exception $e){
-            echo json_encode(array("error"=>$e->getMessage)); 
+        else{ 
+            throw new ThesisRequestException(); 
         }
+        # echo json_encode(array("Empty request body error")); 
     }
 ?>

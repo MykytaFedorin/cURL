@@ -1,18 +1,27 @@
 <?php
-try{
     require_once "../../../.config/zadanie2/config.global.php";
-
-    // Обработка запроса
-    $requestMethod = $_SERVER["REQUEST_METHOD"];
-
-    $path = $_SERVER["REQUEST_URI"];
+    require_once "getPrace.php";
+    try{
+        $requestMethod = $_SERVER["REQUEST_METHOD"];
+        $path = $_SERVER["REQUEST_URI"];
+    }
+    catch(Exception $e){
+        echo 'Error: script was executed from terminal' . $e->getMessage();
+    }
     $pathSegments = explode('/', $path);
     $resource = end($pathSegments);
-
+    
     switch ($requestMethod) {
         case 'POST':
             if($resource==="prace"){
-                include 'getPrace.php';
+                $postData = json_decode(file_get_contents("php://input"), true);
+                try{
+                    getThesisesBy($postData);
+                }
+                catch(ThesisRequestException $e){
+                    echo json_encode(array("Empty request body error")); 
+                    http_response_code(400);
+                }
             }
             else{ 
                 http_response_code(404);
@@ -20,9 +29,5 @@ try{
             }
             break;
     }
-}
-catch(Exception $e){    
-    http_response_code(418);
-}
 ?>
 
