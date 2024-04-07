@@ -12,8 +12,13 @@
         catch(ThesisRequestException $e){
             throw $e; 
         }
-        $thesises = getThesises($url);
-        $filteredThesises = filterThesises($thesises, $thesis_type, $department);
+        try{
+            $thesises = getThesises($url);
+            $filteredThesises = filterThesises($thesises, $thesis_type, $department);
+        }
+        catch(ThesisEmptyBodyException $e){
+            throw $e; 
+        }
         return json_encode($filteredThesises);
         # echo json_encode(array("Empty request body error")); 
     }

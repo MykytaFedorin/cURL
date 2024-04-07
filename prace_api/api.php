@@ -23,11 +23,18 @@
                     echo json_encode(array("Empty request body error")); 
                     http_response_code(400);
                 }
+                catch(ThesisEmptyBodyException $e){
+                  echo json_encode(array("message" => "Thesis object body is empty " .$e->getMessage()));
+                }
             }
             else{ 
+                echo json_encode(array("message" => "Resource not found."));
                 http_response_code(404);
-                echo json_encode(array("message" => "Resource not found.", "path" => $resource));
             }
+            break;
+        default:
+                http_response_code(400);
+                echo json_encode(array("message" => "No handler for the request"));
             break;
     }
 ?>

@@ -1,4 +1,5 @@
 <?php
+require_once("./exceptions/ThesisEmptyBodyException.php");
 class Thesis{
     public $thesis_type;
     public $topic;
@@ -37,10 +38,15 @@ class Thesis{
         $params = array_map('trim', $params);
         $params = array_map('intval', $params);
         $conditions = array();
-        if($params[0] == $params[1] || $params[0]>$params[1]){
-            return false; 
-        } 
-        return true;
+        if(isset($params[0]) && isset($params[1])){
+            if($params[0] == $params[1] || $params[0]>$params[1]){
+                return false; 
+            }
+            return true;
+        }
+        else{ 
+            throw new ThesisEmptyBodyException("constructor");
+        }
     }
 }
 ?>

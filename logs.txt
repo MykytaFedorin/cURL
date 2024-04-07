@@ -1,436 +1,52 @@
-Attaching to zadanie2-phpmyadmin-1, zadanie2-nginx-1, zadanie2-php-1, zadanie2-mysql-1
-[36mzadanie2-mysql-1 |[0m 2024-03-30 11:34:17+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.36-1.el8 started.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 11:34:17+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
-[36mzadanie2-mysql-1 |[0m 2024-03-30 11:34:17+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.36-1.el8 started.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 11:34:17+00:00 [Note] [Entrypoint]: Initializing database files
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:34:17.785979Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:34:17.786071Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.36) initializing of server in progress as process 80
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:34:17.875399Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:34:34.074502Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:34:53.954693Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 11:35:57+00:00 [Note] [Entrypoint]: Database files initialized
-[36mzadanie2-mysql-1 |[0m 2024-03-30 11:35:57+00:00 [Note] [Entrypoint]: Starting temporary server
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:35:57.482837Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:35:57.483840Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.36) starting as process 238
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:35:57.584951Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:35:58.988568Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:36:02.685317Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:36:02.685535Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:36:02.835515Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:36:02.850484Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:36:02.850639Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.36'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 11:36:02+00:00 [Note] [Entrypoint]: Temporary server started.
-[36mzadanie2-mysql-1 |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
-[36mzadanie2-mysql-1 |[0m Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
-[36mzadanie2-mysql-1 |[0m Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
-[36mzadanie2-mysql-1 |[0m Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
-[36mzadanie2-mysql-1 |[0m Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
-[36mzadanie2-mysql-1 |[0m Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
-[36mzadanie2-mysql-1 |[0m Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 11:36:06+00:00 [Note] [Entrypoint]: Creating database demo
-[36mzadanie2-mysql-1 |[0m 
-[36mzadanie2-mysql-1 |[0m 2024-03-30 11:36:07+00:00 [Note] [Entrypoint]: Stopping temporary server
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:36:07.205876Z 11 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.36).
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:36:30.176028Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.36)  MySQL Community Server - GPL.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 11:36:30+00:00 [Note] [Entrypoint]: Temporary server stopped
-[36mzadanie2-mysql-1 |[0m 
-[36mzadanie2-mysql-1 |[0m 2024-03-30 11:36:30+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
-[36mzadanie2-mysql-1 |[0m 
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:36:30.420129Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:36:30.420990Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.36) starting as process 1
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:36:30.425439Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:36:32.428952Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:36:34.352912Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:36:34.353130Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:36:34.556397Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:36:34.570725Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:36:34.570743Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.36'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:36:52.223855Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.36).
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:36:53.917006Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.36)  MySQL Community Server - GPL.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 11:36:56+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.36-1.el8 started.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 11:36:56+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
-[36mzadanie2-mysql-1 |[0m 2024-03-30 11:36:56+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.36-1.el8 started.
-[36mzadanie2-mysql-1 |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:36:57.068642Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:36:57.069545Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.36) starting as process 1
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:36:57.097263Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:36:58.627531Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:37:01.772671Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:37:01.772855Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:37:01.949264Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:37:01.969117Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:37:01.969142Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.36'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:44:31.845549Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.36).
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:44:33.017941Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.36)  MySQL Community Server - GPL.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 11:44:34+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.36-1.el8 started.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 11:44:34+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
-[36mzadanie2-mysql-1 |[0m 2024-03-30 11:44:34+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.36-1.el8 started.
-[36mzadanie2-mysql-1 |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:44:34.637477Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:44:34.638304Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.36) starting as process 1
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:44:34.642482Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:44:37.038223Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:44:39.126106Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:44:39.126142Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:44:39.275052Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:44:39.289458Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:44:39.289481Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.36'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:45:41.146086Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.36).
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:45:42.446303Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.36)  MySQL Community Server - GPL.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 11:45:44+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.36-1.el8 started.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 11:45:44+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
-[36mzadanie2-mysql-1 |[0m 2024-03-30 11:45:44+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.36-1.el8 started.
-[36mzadanie2-mysql-1 |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:45:44.639242Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:45:44.640100Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.36) starting as process 1
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:45:44.644546Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:45:46.798669Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:45:48.593158Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:45:48.593418Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:45:48.725317Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:45:48.740472Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
-[36mzadanie2-mysql-1 |[0m 2024-03-30T11:45:48.740488Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.36'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:36:46.293491Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.36).
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:36:47.138442Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.36)  MySQL Community Server - GPL.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 12:36:50+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.36-1.el8 started.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 12:36:50+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
-[36mzadanie2-mysql-1 |[0m 2024-03-30 12:36:50+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.36-1.el8 started.
-[36mzadanie2-mysql-1 |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:36:51.002830Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:36:51.003738Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.36) starting as process 1
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:36:51.008060Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:36:53.060013Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:36:55.012033Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:36:55.012074Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:36:55.179045Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:36:55.277327Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.36'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:36:55.277546Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:37:55.867351Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.36).
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:37:58.313960Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.36)  MySQL Community Server - GPL.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 12:38:01+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.36-1.el8 started.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 12:38:01+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
-[36mzadanie2-mysql-1 |[0m 2024-03-30 12:38:01+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.36-1.el8 started.
-[36mzadanie2-mysql-1 |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:38:01.610870Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:38:01.611934Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.36) starting as process 1
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:38:01.616696Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:38:02.731509Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:38:04.340360Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:38:04.340401Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:38:04.446377Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:38:04.505771Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:38:04.505786Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.36'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:39:05.404900Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.36).
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:39:10.495110Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.36)  MySQL Community Server - GPL.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 12:39:16+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.36-1.el8 started.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 12:39:16+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
-[36mzadanie2-mysql-1 |[0m 2024-03-30 12:39:16+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.36-1.el8 started.
-[36mzadanie2-mysql-1 |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:39:16.602565Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:39:16.603595Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.36) starting as process 1
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:39:16.607966Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:39:18.154648Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:39:19.601013Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:39:19.601145Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:39:19.748497Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:39:19.763466Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.36'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:39:19.763462Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:50:08.234365Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.36).
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:50:09.318575Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.36)  MySQL Community Server - GPL.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 12:50:12+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.36-1.el8 started.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 12:50:12+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
-[36mzadanie2-mysql-1 |[0m 2024-03-30 12:50:12+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.36-1.el8 started.
-[36mzadanie2-mysql-1 |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:50:13.171124Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:50:13.172045Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.36) starting as process 1
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:50:13.176173Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:50:13.961121Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:50:15.440641Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:50:15.440881Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:50:15.524197Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:50:15.539303Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.36'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T12:50:15.539302Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
-[36mzadanie2-mysql-1 |[0m 2024-03-30T13:29:42.583256Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.36).
-[36mzadanie2-mysql-1 |[0m 2024-03-30T13:29:43.640586Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.36)  MySQL Community Server - GPL.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 13:29:46+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.36-1.el8 started.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 13:29:46+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
-[36mzadanie2-mysql-1 |[0m 2024-03-30 13:29:46+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.36-1.el8 started.
-[36mzadanie2-mysql-1 |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
-[36mzadanie2-mysql-1 |[0m 2024-03-30T13:29:46.864236Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T13:29:46.865131Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.36) starting as process 1
-[36mzadanie2-mysql-1 |[0m 2024-03-30T13:29:46.869433Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T13:29:47.577519Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T13:29:48.772287Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T13:29:48.772327Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T13:29:48.905434Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T13:29:48.977606Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
-[36mzadanie2-mysql-1 |[0m 2024-03-30T13:29:48.977629Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.36'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T13:31:44.397186Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.36).
-[36mzadanie2-mysql-1 |[0m 2024-03-30T13:31:46.326017Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.36)  MySQL Community Server - GPL.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 13:31:48+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.36-1.el8 started.
-[36mzadanie2-mysql-1 |[0m 2024-03-30 13:31:49+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
-[36mzadanie2-mysql-1 |[0m 2024-03-30 13:31:49+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.36-1.el8 started.
-[36mzadanie2-mysql-1 |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
-[36mzadanie2-mysql-1 |[0m 2024-03-30T13:31:49.317171Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T13:31:49.318064Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.36) starting as process 1
-[36mzadanie2-mysql-1 |[0m 2024-03-30T13:31:49.322204Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T13:31:50.456862Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T13:31:53.538168Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T13:31:53.538381Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T13:31:53.662261Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T13:31:53.751456Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.36'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
-[36mzadanie2-mysql-1 |[0m 2024-03-30T13:31:53.751464Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
-[32mzadanie2-php-1 |[0m [30-Mar-2024 11:47:12] NOTICE: fpm is running, pid 1
-[32mzadanie2-php-1 |[0m [30-Mar-2024 11:47:12] NOTICE: ready to handle connections
-[32mzadanie2-php-1 |[0m 172.19.0.5 -  30/Mar/2024:12:04:31 +0000 "GET /index.php" 200
-[32mzadanie2-php-1 |[0m [30-Mar-2024 12:36:46] NOTICE: Finishing ...
-[32mzadanie2-php-1 |[0m [30-Mar-2024 12:36:46] NOTICE: exiting, bye-bye!
-[32mzadanie2-php-1 |[0m [30-Mar-2024 12:36:49] NOTICE: fpm is running, pid 1
-[32mzadanie2-php-1 |[0m [30-Mar-2024 12:36:49] NOTICE: ready to handle connections
-[32mzadanie2-php-1 |[0m [30-Mar-2024 12:37:55] NOTICE: Finishing ...
-[32mzadanie2-php-1 |[0m [30-Mar-2024 12:37:55] NOTICE: exiting, bye-bye!
-[32mzadanie2-php-1 |[0m [30-Mar-2024 12:38:00] NOTICE: fpm is running, pid 1
-[32mzadanie2-php-1 |[0m [30-Mar-2024 12:38:00] NOTICE: ready to handle connections
-[32mzadanie2-php-1 |[0m [30-Mar-2024 12:39:05] NOTICE: Finishing ...
-[32mzadanie2-php-1 |[0m [30-Mar-2024 12:39:05] NOTICE: exiting, bye-bye!
-[32mzadanie2-php-1 |[0m [30-Mar-2024 12:39:15] NOTICE: fpm is running, pid 1
-[32mzadanie2-php-1 |[0m [30-Mar-2024 12:39:15] NOTICE: ready to handle connections
-[32mzadanie2-php-1 |[0m [30-Mar-2024 12:50:08] NOTICE: Finishing ...
-[32mzadanie2-php-1 |[0m [30-Mar-2024 12:50:08] NOTICE: exiting, bye-bye!
-[32mzadanie2-php-1 |[0m [30-Mar-2024 12:50:10] NOTICE: fpm is running, pid 1
-[32mzadanie2-php-1 |[0m [30-Mar-2024 12:50:10] NOTICE: ready to handle connections
-[32mzadanie2-php-1 |[0m [30-Mar-2024 13:29:42] NOTICE: Finishing ...
-[32mzadanie2-php-1 |[0m [30-Mar-2024 13:29:42] NOTICE: exiting, bye-bye!
-[32mzadanie2-php-1 |[0m [30-Mar-2024 13:29:45] NOTICE: fpm is running, pid 1
-[32mzadanie2-php-1 |[0m [30-Mar-2024 13:29:45] NOTICE: ready to handle connections
-[32mzadanie2-php-1 |[0m [30-Mar-2024 13:31:44] NOTICE: Finishing ...
-[32mzadanie2-php-1 |[0m [30-Mar-2024 13:31:44] NOTICE: exiting, bye-bye!
-[32mzadanie2-php-1 |[0m [30-Mar-2024 13:31:47] NOTICE: fpm is running, pid 1
-[32mzadanie2-php-1 |[0m [30-Mar-2024 13:31:47] NOTICE: ready to handle connections
-[35mzadanie2-phpmyadmin-1 |[0m [30-Mar-2024 12:37:49] NOTICE: fpm is running, pid 1
-[35mzadanie2-phpmyadmin-1 |[0m [30-Mar-2024 12:37:49] NOTICE: ready to handle connections
-[35mzadanie2-phpmyadmin-1 |[0m [30-Mar-2024 12:37:55] NOTICE: Finishing ...
-[35mzadanie2-phpmyadmin-1 |[0m [30-Mar-2024 12:37:55] NOTICE: exiting, bye-bye!
-[35mzadanie2-phpmyadmin-1 |[0m [30-Mar-2024 12:37:59] NOTICE: fpm is running, pid 1
-[35mzadanie2-phpmyadmin-1 |[0m [30-Mar-2024 12:37:59] NOTICE: ready to handle connections
-[35mzadanie2-phpmyadmin-1 |[0m 172.19.0.4 -  30/Mar/2024:12:38:06 +0000 "- " 200
-[35mzadanie2-phpmyadmin-1 |[0m [30-Mar-2024 12:39:05] NOTICE: Finishing ...
-[35mzadanie2-phpmyadmin-1 |[0m [30-Mar-2024 12:39:05] NOTICE: exiting, bye-bye!
-[35mzadanie2-phpmyadmin-1 |[0m [30-Mar-2024 12:39:14] NOTICE: fpm is running, pid 1
-[35mzadanie2-phpmyadmin-1 |[0m [30-Mar-2024 12:39:14] NOTICE: ready to handle connections
-[35mzadanie2-phpmyadmin-1 |[0m [30-Mar-2024 12:50:08] NOTICE: Finishing ...
-[35mzadanie2-phpmyadmin-1 |[0m [30-Mar-2024 12:50:08] NOTICE: exiting, bye-bye!
-[35mzadanie2-phpmyadmin-1 |[0m [30-Mar-2024 12:50:10] NOTICE: fpm is running, pid 1
-[35mzadanie2-phpmyadmin-1 |[0m [30-Mar-2024 12:50:10] NOTICE: ready to handle connections
-[35mzadanie2-phpmyadmin-1 |[0m [30-Mar-2024 13:29:42] NOTICE: Finishing ...
-[35mzadanie2-phpmyadmin-1 |[0m [30-Mar-2024 13:29:42] NOTICE: exiting, bye-bye!
-[35mzadanie2-phpmyadmin-1 |[0m [30-Mar-2024 13:29:45] NOTICE: fpm is running, pid 1
-[35mzadanie2-phpmyadmin-1 |[0m [30-Mar-2024 13:29:45] NOTICE: ready to handle connections
-[35mzadanie2-phpmyadmin-1 |[0m [30-Mar-2024 13:31:44] NOTICE: Finishing ...
-[35mzadanie2-phpmyadmin-1 |[0m [30-Mar-2024 13:31:44] NOTICE: exiting, bye-bye!
-[35mzadanie2-phpmyadmin-1 |[0m [30-Mar-2024 13:31:47] NOTICE: fpm is running, pid 1
-[35mzadanie2-phpmyadmin-1 |[0m [30-Mar-2024 13:31:47] NOTICE: ready to handle connections
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
-[33mzadanie2-nginx-1 |[0m 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
-[33mzadanie2-nginx-1 |[0m 10-listen-on-ipv6-by-default.sh: info: /etc/nginx/conf.d/default.conf differs from the packaged version
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Configuration complete; ready for start up
-[33mzadanie2-nginx-1 |[0m 2024/03/30 11:47:13 [notice] 1#1: using the "epoll" event method
-[33mzadanie2-nginx-1 |[0m 2024/03/30 11:47:13 [notice] 1#1: nginx/1.25.4
-[33mzadanie2-nginx-1 |[0m 2024/03/30 11:47:13 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
-[33mzadanie2-nginx-1 |[0m 2024/03/30 11:47:13 [notice] 1#1: OS: Linux 5.15.0-94-generic
-[33mzadanie2-nginx-1 |[0m 2024/03/30 11:47:13 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
-[33mzadanie2-nginx-1 |[0m 2024/03/30 11:47:13 [notice] 1#1: start worker processes
-[33mzadanie2-nginx-1 |[0m 2024/03/30 11:47:13 [notice] 1#1: start worker process 28
-[33mzadanie2-nginx-1 |[0m 2024/03/30 11:47:13 [notice] 1#1: start worker process 29
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:04:15 [info] 29#29: *1 client closed connection while waiting for request, client: 147.175.179.141, server: 0.0.0.0:443
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:04:19 [error] 28#28: *2 open() "/var/www/node34.webte.fei.stuba.sk/zadanie2/phpmyadmin" failed (2: No such file or directory), client: 147.175.179.141, server: node34.webte.fei.stuba.sk, request: "GET /phpmyadmin HTTP/1.1", host: "node34.webte.fei.stuba.sk:444"
-[33mzadanie2-nginx-1 |[0m 147.175.179.141 - - [30/Mar/2024:12:04:19 +0000] "GET /phpmyadmin HTTP/1.1" 404 153 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0"
-[33mzadanie2-nginx-1 |[0m 147.175.179.141 - - [30/Mar/2024:12:04:31 +0000] "GET / HTTP/1.1" 200 21 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0"
-[33mzadanie2-nginx-1 |[0m 147.175.179.141 - - [30/Mar/2024:12:08:38 +0000] "GET /phpmyadmon HTTP/1.1" 404 153 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0"
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:08:38 [error] 29#29: *4 open() "/var/www/node34.webte.fei.stuba.sk/zadanie2/phpmyadmon" failed (2: No such file or directory), client: 147.175.179.141, server: node34.webte.fei.stuba.sk, request: "GET /phpmyadmon HTTP/1.1", host: "node34.webte.fei.stuba.sk:444"
-[33mzadanie2-nginx-1 |[0m 147.175.179.141 - - [30/Mar/2024:12:08:42 +0000] "GET /phpmyadmin HTTP/1.1" 404 153 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0"
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:08:42 [error] 29#29: *4 open() "/var/www/node34.webte.fei.stuba.sk/zadanie2/phpmyadmin" failed (2: No such file or directory), client: 147.175.179.141, server: node34.webte.fei.stuba.sk, request: "GET /phpmyadmin HTTP/1.1", host: "node34.webte.fei.stuba.sk:444"
-[33mzadanie2-nginx-1 |[0m 35.195.71.155 - - [30/Mar/2024:12:15:51 +0000] "POST /tmUnblock.cgi HTTP/1.1" 301 169 "-" "Mozilla" "-"
-[33mzadanie2-nginx-1 |[0m 35.195.71.155 - - [30/Mar/2024:12:15:51 +0000] "tion=&commit=0&StartEPI=1" 400 157 "-" "-" "-"
-[33mzadanie2-nginx-1 |[0m 87.121.69.52 - - [30/Mar/2024:12:23:16 +0000] "CONNECT google.com:443 HTTP/1.1" 400 157 "-" "-" "-"
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:23:40 [error] 29#29: *8 open() "/var/www/node34.webte.fei.stuba.sk/zadanie2/phpmyadmin" failed (2: No such file or directory), client: 147.175.179.141, server: node34.webte.fei.stuba.sk, request: "GET /phpmyadmin HTTP/1.1", host: "node34.webte.fei.stuba.sk:444"
-[33mzadanie2-nginx-1 |[0m 147.175.179.141 - - [30/Mar/2024:12:23:40 +0000] "GET /phpmyadmin HTTP/1.1" 404 153 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0"
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:29:00 [error] 29#29: *9 open() "/var/www/node34.webte.fei.stuba.sk/zadanie2/phpmyadmin" failed (2: No such file or directory), client: 147.175.179.141, server: node34.webte.fei.stuba.sk, request: "GET /phpmyadmin HTTP/1.1", host: "node34.webte.fei.stuba.sk:444"
-[33mzadanie2-nginx-1 |[0m 147.175.179.141 - - [30/Mar/2024:12:29:00 +0000] "GET /phpmyadmin HTTP/1.1" 404 153 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0"
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:29:04 [error] 29#29: *9 open() "/var/www/node34.webte.fei.stuba.sk/zadanie2/phpmyadmin" failed (2: No such file or directory), client: 147.175.179.141, server: node34.webte.fei.stuba.sk, request: "GET /phpmyadmin HTTP/1.1", host: "node34.webte.fei.stuba.sk:444"
-[33mzadanie2-nginx-1 |[0m 147.175.179.141 - - [30/Mar/2024:12:29:04 +0000] "GET /phpmyadmin HTTP/1.1" 404 153 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0"
-[33mzadanie2-nginx-1 |[0m 184.105.139.68 - - [30/Mar/2024:12:29:57 +0000] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03V\x17\xEE\xF2\xA5\xFC\x06\x1CYrWxJ\x087~)WG\x16\xAE\x8C\x1Fq\x02\xBEH^~ur\x5C\x00\x00\x1A\xC0/\xC0+\xC0\x11\xC0\x07\xC0\x13\xC0\x09\xC0\x14\xC0" 400 157 "-" "-" "-"
-[33mzadanie2-nginx-1 |[0m 101.78.209.118 - - [30/Mar/2024:12:30:07 +0000] "\x16\x03\x01\x00\xEE\x01\x00\x00\xEA\x03\x03\x9AAx':\x8CN\xC5_2\x9F\xC2GK\xD1$_\x8B\xDD\xF7{\x9D\xB7\xBA\xBEOS\xA7\x12\x1A\xBB\xC8 .T\xB3k\x1B\xD9\x19%\x9D\x09$<n:\x08\xFB\xB16-\x93H\x8C(\x05~\xAF\xA5\xFAGyhh\x00&\xC0+\xC0/\xC0,\xC00\xCC\xA9\xCC\xA8\xC0\x09\xC0\x13\xC0" 400 157 "-" "-" "-"
-[33mzadanie2-nginx-1 |[0m 101.78.209.118 - - [30/Mar/2024:12:30:08 +0000] "GET / HTTP/1.1" 301 169 "-" "Go-http-client/1.1" "-"
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:36:46 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:36:46 [notice] 28#28: gracefully shutting down
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:36:46 [notice] 28#28: exiting
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:36:46 [notice] 28#28: exit
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:36:46 [notice] 29#29: gracefully shutting down
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:36:46 [notice] 29#29: exiting
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:36:46 [notice] 29#29: exit
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:36:46 [notice] 1#1: signal 17 (SIGCHLD) received from 28
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:36:46 [notice] 1#1: worker process 28 exited with code 0
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:36:46 [notice] 1#1: signal 29 (SIGIO) received
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:36:46 [notice] 1#1: signal 17 (SIGCHLD) received from 29
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:36:46 [notice] 1#1: worker process 29 exited with code 0
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:36:46 [notice] 1#1: exit
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
-[33mzadanie2-nginx-1 |[0m 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
-[33mzadanie2-nginx-1 |[0m 10-listen-on-ipv6-by-default.sh: info: /etc/nginx/conf.d/default.conf differs from the packaged version
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Configuration complete; ready for start up
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:36:50 [notice] 1#1: using the "epoll" event method
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:36:50 [notice] 1#1: nginx/1.25.4
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:36:50 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:36:50 [notice] 1#1: OS: Linux 5.15.0-94-generic
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:36:50 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:36:50 [notice] 1#1: start worker processes
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:36:50 [notice] 1#1: start worker process 28
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:36:50 [notice] 1#1: start worker process 29
-[33mzadanie2-nginx-1 |[0m 147.175.179.141 - - [30/Mar/2024:12:37:02 +0000] "GET /phpmyadmin HTTP/1.1" 200 5 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0"
-[33mzadanie2-nginx-1 |[0m 147.175.179.141 - - [30/Mar/2024:12:37:10 +0000] "GET /phpmyadmin HTTP/1.1" 200 5 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0"
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:37:55 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:37:55 [notice] 29#29: gracefully shutting down
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:37:55 [notice] 29#29: exiting
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:37:55 [notice] 28#28: gracefully shutting down
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:37:55 [notice] 29#29: exit
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:37:55 [notice] 28#28: exiting
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:37:55 [notice] 28#28: exit
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:37:55 [notice] 1#1: signal 17 (SIGCHLD) received from 28
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:37:55 [notice] 1#1: worker process 28 exited with code 0
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:37:55 [notice] 1#1: signal 29 (SIGIO) received
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:37:55 [notice] 1#1: signal 17 (SIGCHLD) received from 29
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:37:55 [notice] 1#1: worker process 29 exited with code 0
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:37:55 [notice] 1#1: exit
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
-[33mzadanie2-nginx-1 |[0m 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
-[33mzadanie2-nginx-1 |[0m 10-listen-on-ipv6-by-default.sh: info: /etc/nginx/conf.d/default.conf differs from the packaged version
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Configuration complete; ready for start up
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:38:00 [notice] 1#1: using the "epoll" event method
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:38:00 [notice] 1#1: nginx/1.25.4
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:38:00 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:38:00 [notice] 1#1: OS: Linux 5.15.0-94-generic
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:38:00 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:38:00 [notice] 1#1: start worker processes
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:38:00 [notice] 1#1: start worker process 27
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:38:00 [notice] 1#1: start worker process 28
-[33mzadanie2-nginx-1 |[0m 147.175.179.141 - - [30/Mar/2024:12:38:06 +0000] "GET /phpmyadmin HTTP/1.1" 200 5 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0"
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:38:06 [error] 27#27: *1 open() "/var/www/node34.webte.fei.stuba.sk/zadanie2/favicon.ico" failed (2: No such file or directory), client: 147.175.179.141, server: node34.webte.fei.stuba.sk, request: "GET /favicon.ico HTTP/1.1", host: "node34.webte.fei.stuba.sk:444", referrer: "https://node34.webte.fei.stuba.sk:444/phpmyadmin"
-[33mzadanie2-nginx-1 |[0m 147.175.179.141 - - [30/Mar/2024:12:38:06 +0000] "GET /favicon.ico HTTP/1.1" 404 153 "https://node34.webte.fei.stuba.sk:444/phpmyadmin" "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0"
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:39:05 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:39:05 [notice] 28#28: gracefully shutting down
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:39:05 [notice] 27#27: gracefully shutting down
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:39:05 [notice] 28#28: exiting
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:39:05 [notice] 27#27: exiting
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:39:05 [notice] 28#28: exit
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:39:05 [notice] 27#27: exit
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:39:05 [notice] 1#1: signal 17 (SIGCHLD) received from 28
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:39:05 [notice] 1#1: worker process 28 exited with code 0
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:39:05 [notice] 1#1: signal 29 (SIGIO) received
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:39:05 [notice] 1#1: signal 17 (SIGCHLD) received from 27
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:39:05 [notice] 1#1: worker process 27 exited with code 0
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:39:05 [notice] 1#1: exit
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
-[33mzadanie2-nginx-1 |[0m 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
-[33mzadanie2-nginx-1 |[0m 10-listen-on-ipv6-by-default.sh: info: /etc/nginx/conf.d/default.conf differs from the packaged version
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Configuration complete; ready for start up
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:39:15 [notice] 1#1: using the "epoll" event method
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:39:15 [notice] 1#1: nginx/1.25.4
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:39:15 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:39:15 [notice] 1#1: OS: Linux 5.15.0-94-generic
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:39:15 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:39:15 [notice] 1#1: start worker processes
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:39:15 [notice] 1#1: start worker process 28
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:39:15 [notice] 1#1: start worker process 29
-[33mzadanie2-nginx-1 |[0m 147.175.179.141 - - [30/Mar/2024:12:39:24 +0000] "GET /phpmyadmin HTTP/1.1" 502 157 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0"
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:39:24 [error] 28#28: *1 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 147.175.179.141, server: node34.webte.fei.stuba.sk, request: "GET /phpmyadmin HTTP/1.1", upstream: "http://172.19.0.3:9000/phpmyadmin", host: "node34.webte.fei.stuba.sk:444"
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:39:25 [error] 28#28: *1 open() "/var/www/node34.webte.fei.stuba.sk/zadanie2/favicon.ico" failed (2: No such file or directory), client: 147.175.179.141, server: node34.webte.fei.stuba.sk, request: "GET /favicon.ico HTTP/1.1", host: "node34.webte.fei.stuba.sk:444", referrer: "https://node34.webte.fei.stuba.sk:444/phpmyadmin"
-[33mzadanie2-nginx-1 |[0m 147.175.179.141 - - [30/Mar/2024:12:39:25 +0000] "GET /favicon.ico HTTP/1.1" 404 153 "https://node34.webte.fei.stuba.sk:444/phpmyadmin" "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0"
-[33mzadanie2-nginx-1 |[0m 45.88.97.253 - - [30/Mar/2024:12:43:35 +0000] "CONNECT karlshochschule.de:443 HTTP/1.1" 400 157 "-" "-" "-"
-[33mzadanie2-nginx-1 |[0m 185.191.126.213 - - [30/Mar/2024:12:46:26 +0000] "GET / HTTP/1.1" 301 169 "-" "-" "-"
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:50:08 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:50:08 [notice] 29#29: gracefully shutting down
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:50:08 [notice] 28#28: gracefully shutting down
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:50:08 [notice] 29#29: exiting
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:50:08 [notice] 28#28: exiting
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:50:08 [notice] 28#28: exit
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:50:08 [notice] 29#29: exit
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:50:08 [notice] 1#1: signal 17 (SIGCHLD) received from 29
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:50:08 [notice] 1#1: worker process 28 exited with code 0
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:50:08 [notice] 1#1: worker process 29 exited with code 0
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:50:08 [notice] 1#1: exit
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
-[33mzadanie2-nginx-1 |[0m 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
-[33mzadanie2-nginx-1 |[0m 10-listen-on-ipv6-by-default.sh: info: /etc/nginx/conf.d/default.conf differs from the packaged version
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Configuration complete; ready for start up
-[33mzadanie2-nginx-1 |[0m 2024/03/30 12:50:10 [emerg] 1#1: unknown directive "ssl" in /etc/nginx/conf.d/default.conf:19
-[33mzadanie2-nginx-1 |[0m nginx: [emerg] unknown directive "ssl" in /etc/nginx/conf.d/default.conf:19
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
-[33mzadanie2-nginx-1 |[0m 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
-[33mzadanie2-nginx-1 |[0m 10-listen-on-ipv6-by-default.sh: info: /etc/nginx/conf.d/default.conf differs from the packaged version
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Configuration complete; ready for start up
-[33mzadanie2-nginx-1 |[0m 2024/03/30 13:29:33 [emerg] 1#1: unknown directive "ssl" in /etc/nginx/conf.d/default.conf:19
-[33mzadanie2-nginx-1 |[0m nginx: [emerg] unknown directive "ssl" in /etc/nginx/conf.d/default.conf:19
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
-[33mzadanie2-nginx-1 |[0m 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
-[33mzadanie2-nginx-1 |[0m 10-listen-on-ipv6-by-default.sh: info: /etc/nginx/conf.d/default.conf differs from the packaged version
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Configuration complete; ready for start up
-[33mzadanie2-nginx-1 |[0m 2024/03/30 13:29:43 [emerg] 1#1: unknown directive "ssl" in /etc/nginx/conf.d/default.conf:19
-[33mzadanie2-nginx-1 |[0m nginx: [emerg] unknown directive "ssl" in /etc/nginx/conf.d/default.conf:19
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
-[33mzadanie2-nginx-1 |[0m 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
-[33mzadanie2-nginx-1 |[0m 10-listen-on-ipv6-by-default.sh: info: /etc/nginx/conf.d/default.conf differs from the packaged version
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Configuration complete; ready for start up
-[33mzadanie2-nginx-1 |[0m 2024/03/30 13:31:39 [emerg] 1#1: host not found in upstream "phpmyadmin-fpm" in /etc/nginx/conf.d/default.conf:29
-[33mzadanie2-nginx-1 |[0m nginx: [emerg] host not found in upstream "phpmyadmin-fpm" in /etc/nginx/conf.d/default.conf:29
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
-[33mzadanie2-nginx-1 |[0m 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
-[33mzadanie2-nginx-1 |[0m 10-listen-on-ipv6-by-default.sh: info: /etc/nginx/conf.d/default.conf differs from the packaged version
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
-[33mzadanie2-nginx-1 |[0m /docker-entrypoint.sh: Configuration complete; ready for start up
-[33mzadanie2-nginx-1 |[0m 2024/03/30 13:31:45 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/default.conf:23
-[33mzadanie2-nginx-1 |[0m nginx: [emerg] host not found in upstream "php" in /etc/nginx/conf.d/default.conf:23
+nginx-1  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+nginx-1  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+nginx-1  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+nginx-1  | 10-listen-on-ipv6-by-default.sh: info: /etc/nginx/conf.d/default.conf differs from the packaged version
+nginx-1  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+nginx-1  | /docker-entrypoint.sh: Configuration complete; ready for start up
+nginx-1  | 2024/04/07 07:10:31 [notice] 1#1: using the "epoll" event method
+nginx-1  | 2024/04/07 07:10:31 [notice] 1#1: nginx/1.25.4
+nginx-1  | 2024/04/07 07:10:31 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+nginx-1  | 2024/04/07 07:10:31 [notice] 1#1: OS: Linux 5.10.0-28-amd64
+nginx-1  | 2024/04/07 07:10:31 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+nginx-1  | 2024/04/07 07:10:31 [notice] 1#1: start worker processes
+nginx-1  | 2024/04/07 07:10:31 [notice] 1#1: start worker process 28
+nginx-1  | 2024/04/07 07:10:31 [notice] 1#1: start worker process 29
+nginx-1  | 2024/04/07 07:10:31 [notice] 1#1: start worker process 30
+nginx-1  | 2024/04/07 07:10:31 [notice] 1#1: start worker process 31
+php-1    | [07-Apr-2024 07:10:31] NOTICE: fpm is running, pid 1
+php-1    | [07-Apr-2024 07:10:31] NOTICE: ready to handle connections
+mysql-1  | 2024-04-07 07:10:31+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.36-1.el8 started.
+mysql-1  | 2024-04-07 07:10:31+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+mysql-1  | 2024-04-07 07:10:31+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.36-1.el8 started.
+mysql-1  | 2024-04-07 07:10:31+00:00 [Note] [Entrypoint]: Initializing database files
+mysql-1  | 2024-04-07T07:10:31.892982Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+mysql-1  | 2024-04-07T07:10:31.893557Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.36) initializing of server in progress as process 80
+mysql-1  | 2024-04-07T07:10:31.912419Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+mysql-1  | 2024-04-07T07:10:32.487662Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+mysql-1  | 2024-04-07T07:10:34.178682Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+mysql-1  | 2024-04-07 07:10:39+00:00 [Note] [Entrypoint]: Database files initialized
+mysql-1  | 2024-04-07 07:10:39+00:00 [Note] [Entrypoint]: Starting temporary server
+mysql-1  | 2024-04-07T07:10:40.171892Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+mysql-1  | 2024-04-07T07:10:40.173984Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.36) starting as process 130
+mysql-1  | 2024-04-07T07:10:40.209694Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+mysql-1  | 2024-04-07T07:10:40.420194Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+mysql-1  | 2024-04-07T07:10:40.695234Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+mysql-1  | 2024-04-07T07:10:40.695286Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+mysql-1  | 2024-04-07T07:10:40.697119Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+mysql-1  | 2024-04-07T07:10:40.720124Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+mysql-1  | 2024-04-07T07:10:40.720183Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.36'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+mysql-1  | 2024-04-07 07:10:40+00:00 [Note] [Entrypoint]: Temporary server started.
+mysql-1  | '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+mysql-1  | Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+mysql-1  | Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
+mysql-1  | Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+mysql-1  | Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+mysql-1  | Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+mysql-1  | Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+mysql-1  | 
+mysql-1  | 2024-04-07 07:10:44+00:00 [Note] [Entrypoint]: /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init.sql
+mysql-1  | ERROR 1396 (HY000) at line 1: Operation CREATE USER failed for 'root'@'%'

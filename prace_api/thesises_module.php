@@ -84,9 +84,9 @@
         return new DOMXPath($dom);
     }
 
-    function getThesisElements($xpath){ 
+    function getThesisElements($xpath, $page){ 
         $query = "//tr[contains(@class, 'uis-hl-table') and contains(@class, 'lbn')]";
-        $res = $xpath->query($query, $page);
+        $res = $xpath->query($query);
         # echo $res->item(0)->nodeValue;
         return $res;
     }
@@ -117,7 +117,7 @@
             throw new ThesisRequestException();
         }
     }
-    function getThesisObject($element, $xpath){
+    function getThesisObject($element, $xpath, $availableIndex){
         $cells = $xpath->query("./td", $element);
         $ord = $cells->item(1)->nodeValue;
         $type = $cells->item(1)->nodeValue;
@@ -126,21 +126,33 @@
         $department = $cells->item(4)->nodeValue;
         $programme = $cells->item(5)->nodeValue;
         $track = $cells->item(6)->nodeValue;
-        $available = $cells->item(9)->nodeValue;
+        $available = $cells->item($availableIndex)->nodeValue;
         $url = getAbstractURL($element, $xpath);
-
         return new Thesis($type, $topic, $supervisor,
                           $department, $programme, $track,
                           $url, $available);
+    }
+
+    function getAvailableIndex($xpath){
+        $query = "//thead";
+        $headerRow = $xpath->query($query)->item(0);
+        $columnNames =  $xpath->query("descendant::th[contains(@class, 'zahlavi')]", $headerRow);
+        for($i=0;$i<count($columnNames);$i++){
+            if($columnNames->item($i)->nodeValue == "Occupied/Max."){
+                return $i; 
+            } 
+        }
     }
 
     function getThesises($url){
         $page = getPage($url);
         $xpath = getXPATH($page);
         $thesisElements = getThesisElements($xpath, $page);
+        #echo $page;
+        $availableIndex = getAvailableIndex($xpath);
         $thesisObjects = array();
         foreach($thesisElements as $element){
-            $thesis = getThesisObject($element, $xpath);
+            $thesis = getThesisObject($element, $xpath, $availableIndex);
             array_push($thesisObjects, $thesis); 
         }
         return $thesisObjects;
@@ -150,11 +162,16 @@
     function filterThesises($thesises, $thesis_type, $department){
         $filtered_thesises = array(); 
         foreach($thesises as $thesis){
-          if($thesis->thesis_type === $thesis_type &&
-            $thesis->department === $department &&
-            $thesis->isFree()){
-                array_push($filtered_thesises, $thesis); 
-            } 
+          try{
+              if($thesis->thesis_type === $thesis_type &&
+                $thesis->department === $department &&
+                $thesis->isFree()){
+                    array_push($filtered_thesises, $thesis); 
+                } 
+          }
+          catch(ThesisEmptyBodyException $e){
+              throw $e; 
+          }
         }
         return $filtered_thesises;
     }
