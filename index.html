@@ -3,14 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index Page</title>
+    <title>Terminal Emulator</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: monospace;
+            text-align: center; /* Центрирование содержимого */
+        }
+        .prompt {
+            color: lime;
+        }
+        .command {
+            color: aqua;
+        }
+        #output {
+            display: flex;
+            flex: flex-start;
+            color: white;
+        }
+        .prompt-div{
+            display: flex;
+            flex: flex-start;
+        }
+        .selected {
+            background-color: gray;
+            color: black; /* Цвет текста активной ссылки */
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+            margin-right: 10px; /* Отступ между ссылками */
+        }
+        main{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           width: 50%;
+           height: 100%;
+           gap: 0.5em;
+           font-family: 'Courier New', Courier, monospace;
+        }
+        body{
+           width: 100%;
+           height: 100%;
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           margin: 0;
+           padding: 0;
+           font-size: 20px;
+        }
+        html{
+           width: 100%;
+           height: 100%;
+           margin: 0;
+           padding: 0;
+        }
+        #output a.active {
+            background-color: gray;
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    <h2>Ссылки на другие страницы:</h2>
-    <!-- Ссылка на ais_api/index.php -->
-    <a href="ais_api/index.html">Перейти на страницу ais_api</a><br>
-    <!-- Ссылка на zaverecne_prace/index.php -->
-    <a href="prace_api/index.html">Перейти на страницу zaverecne_prace</a>
+    <main>
+        <div class="prompt-div">
+            <span class="prompt">xfedorin@node34:~$</span>
+            <span class="command">ls</span>
+        </div>
+        <div id="output">
+            <a href="ais_api/index.html" class="link" id="link1">ais_api</a>
+            <a href="prace_api/index.html" class="link" id="link2">zaverecne_prace</a>
+        </div>
+    </main>
+    <script>
+        const links = document.querySelectorAll('.link');
+        let selectedIndex = 0;
+
+        function setSelected(index) {
+            links.forEach(link => link.classList.remove('selected'));
+            links[index].classList.add('selected');
+        }
+
+        setSelected(selectedIndex);
+
+        document.addEventListener('keydown', event => {
+            if (event.key === 'ArrowLeft') {
+                selectedIndex = Math.max(0, selectedIndex - 1);
+                setSelected(selectedIndex);
+            } else if (event.key === 'ArrowRight') {
+                selectedIndex = Math.min(links.length - 1, selectedIndex + 1);
+                setSelected(selectedIndex);
+            }
+        });
+        document.addEventListener("keydown", function(event) {
+            var activeLink = document.querySelector("#output a.active");
+            if (event.key === "Enter" && activeLink) {
+                window.location.href = activeLink.href;
+            }
+        });
+        document.querySelectorAll("#output a").forEach(function(link) {
+            link.addEventListener("mouseover", function() {
+                document.querySelectorAll("#output a").forEach(function(link) {
+                    link.classList.remove("active");
+                });
+                this.classList.add("active");
+            });
+        });
+    </script>
 </body>
 </html>
 
