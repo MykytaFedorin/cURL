@@ -37,7 +37,7 @@ $(document).ready(function() {
     // Функция для загрузки данных и отображения их в таблице
     function fetchSubjects() {
         $.ajax({
-            url: 'http://localhost/ais_api/subjects',
+            url: '/ais_api/subjects',
             type: 'GET',
             dataType: 'json',
             success: function(data) {

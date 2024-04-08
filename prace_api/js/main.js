@@ -7,7 +7,7 @@ async function fetchData() {
     };
 
     try {
-        const response = await fetch('http://localhost/prace_api/prace', {
+        const response = await fetch('/prace_api/prace', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
