@@ -51,3 +51,4 @@ refreshButton.addEventListener('click', async () => {
     await fetchData();
 });
 fetchData();
+$('#myTable').DataTable();
