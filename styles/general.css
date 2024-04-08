@@ -1,0 +1,59 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    text-align: center; /* Центрирование содержимого */
+}
+.prompt {
+    color: lime;
+}
+.command {
+    color: aqua;
+}
+#output {
+    display: flex;
+    flex: flex-start;
+    color: white;
+}
+.prompt-div{
+    display: flex;
+    flex: flex-start;
+}
+.selected {
+    background-color: gray;
+    color: black; /* Цвет текста активной ссылки */
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 10px; /* Отступ между ссылками */
+}
+main{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 50%;
+   height: 100%;
+   gap: 0.5em;
+   font-family: 'Courier New', Courier, monospace;
+}
+body{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin: 0;
+   padding: 0;
+   font-size: 20px;
+}
+html{
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+#output a.active {
+    background-color: gray;
+    color: black;
+}

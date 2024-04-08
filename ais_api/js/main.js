@@ -33,3 +33,39 @@ $('#deleteBtn').click(function() {
         }
     });
 });
+$(document).ready(function() {
+    // Функция для загрузки данных и отображения их в таблице
+    function fetchSubjects() {
+        $.ajax({
+            url: 'http://localhost/ais_api/subjects',
+            type: 'GET',
+            dataType: 'json',
+            success: function(data) {
+                const subjects = data.subjects;
+                const tableBody = $('#subjectTableBody');
+                tableBody.empty(); // Очищаем содержимое тела таблицы перед добавлением новых данных
+
+                $.each(subjects, function(index, subject) {
+                    const row = $('<tr>');
+                    row.append($('<td>').text(subject.subject_id));
+                    row.append($('<td>').text(subject.name));
+                    row.append($('<td>').text(subject.day));
+                    row.append($('<td>').text(subject.room));
+                    row.append($('<td>').text(subject.subject_type));
+                    tableBody.append(row);
+                });
+            },
+            error: function(xhr, status, error) {
+                console.error('Error fetching subjects:', error);
+            }
+        });
+    }
+
+    // Загружаем данные при загрузке страницы
+    fetchSubjects();
+
+    // Обработчик события для кнопки "Refresh"
+    $('#refreshButton').click(function() {
+        fetchSubjects();
+    });
+});
