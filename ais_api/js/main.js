@@ -60,6 +60,29 @@ $(document).ready(function() {
             }
         });
     }
+    $(document).ready(function() {
+$('#subjectTable').on('click', 'td', function() {
+        var $td = $(this);
+        var text = $td.text().trim();
+        var $input = $("<input class='w-100' type='text'>").val(text);
+        $td.empty().append($input);
+        
+        $input.focus();
+        
+        $input.blur(function() {
+            var newText = $(this).val();
+            $td.text(newText);
+        });
+        
+        $input.keydown(function(event) {
+            if (event.which == 13) { // Enter key
+                var newText = $(this).val();
+                $td.text(newText);
+            }
+        });
+        event.stopPropagation();
+    });
+});
 
     // Загружаем данные при загрузке страницы
     fetchSubjects();

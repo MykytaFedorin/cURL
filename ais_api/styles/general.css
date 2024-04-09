@@ -55,3 +55,9 @@ button{
 button:hover{
     background: grey;
 }
+input{
+    background: black;
+    color: white;
+    outline: none;
+    border:none;
+}
