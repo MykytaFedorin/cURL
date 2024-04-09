@@ -14,7 +14,7 @@ $id = $postData['id'] ?? null; // Предполагается, что в зап
 $name = $postData['name'] ?? null;
 $day = $postData['day'] ?? null;
 $room = $postData['room'] ?? null;
-$subjectType = $postData['subject_type'] ?? null;
+$subjectType = $postData['subjectType'] ?? null;
 
 // Проверка наличия всех необходимых данных
 if (!$id || !$name || !$day || !$room || !$subjectType) {
@@ -24,7 +24,6 @@ if (!$id || !$name || !$day || !$room || !$subjectType) {
 }
 
 try {
-    echo json_encode(array("message" => "here"));
     $stmt=$pdo->prepare("SELECT type_id FROM subject_type WHERE type_name=:subject_type");
     $stmt->bindValue(':subject_type', $subjectType, PDO::PARAM_STR);
     $stmt->execute();

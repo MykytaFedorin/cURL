@@ -111,7 +111,7 @@ $(document).ready(function() {
 
             // Отправить строку данных в виде JSON на сервер
             $.ajax({
-                url: 'ais_api/subjects',
+                url: 'subjects',
                 type: 'PUT',
                 contentType: 'application/json',
                 data: JSON.stringify(rowData),

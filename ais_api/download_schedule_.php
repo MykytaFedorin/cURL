@@ -1,4 +1,10 @@
 <?php
+try{
+    require_once "../config.global.php";
+}
+catch(PDOConnectionFailedException $e){
+    echo json_encode(array("message" => $e->getMessage())); 
+}
 function getToken(){    
     $username = $_ENV["USERNAME"];
     $password = $_ENV["PASSWORD"];
