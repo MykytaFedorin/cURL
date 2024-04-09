@@ -1,5 +1,4 @@
 <?php
-require_once "../../../.config/zadanie2/config.global.php";
 
 function insert($table, $column_values) {
     global $pdo; // Предположим, что у вас есть соединение с базой данных в переменной $pdo

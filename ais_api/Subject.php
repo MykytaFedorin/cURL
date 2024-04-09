@@ -1,5 +1,4 @@
 <?php
-require_once "../../../.config/zadanie2/config.global.php";
 class Subject {
     public $day;
     public $subject_type;

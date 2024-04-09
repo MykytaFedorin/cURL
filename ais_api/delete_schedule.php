@@ -1,5 +1,4 @@
 <?php    
-    require_once "../../../.config/zadanie2/config.global.php";
     $stmt = $pdo->prepare("DELETE FROM subjects");
     try{
         $stmt->execute(); 

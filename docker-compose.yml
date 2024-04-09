@@ -21,10 +21,10 @@ services:
       - PASSWORD=${PASSWORD} 
     volumes:
       - ./:/var/www/node34.webte.fei.stuba.sk/zadanie2
-      - ./config.php:/var/www/.config/zadanie2/config.global.php
-      - ./load_dotenv.php:/var/www/.config/zadanie2/loadDotenv.php
-      - ./vendor:/var/www/.config/zadanie2/vendor
-      - ./.env:/var/www/.config/zadanie2/.env
+      - ./config.php:/var/www/node34.webte.fei.stuba.sk/zadanie2/config.global.php
+      - ./load_dotenv.php:/var/www/node34.webte.fei.stuba.sk/zadanie2/loadDotenv.php
+      - ./vendor:/var/www/node34.webte.fei.stuba.sk/zadanie2/vendor
+      - ./.env:/var/www/node34.webte.fei.stuba.sk/zadanie2/.env
     depends_on:
       - mysql
 
@@ -32,6 +32,7 @@ services:
     build: ./.docker/mysql
     volumes:
       - ./.docker/mysql/my.cnf:/etc/mysql/my.cnf
+      - ./.docker/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
       - mysqldata:/var/lib/mysql 
     environment:
       - MYSQL_ROOT_PASSWORD=${MYSQL_PASSWORD}

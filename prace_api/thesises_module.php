@@ -1,5 +1,4 @@
 <?php
-    require_once("../../../.config/zadanie2/config.global.php");
     require_once("Thesis.php");
     require_once("exceptions/ThesisRequestException.php");
     # require_once "../ais_api/download_schedule_.php";

@@ -1,5 +1,5 @@
 <?php
-    require_once "../../../.config/zadanie2/config.global.php";
+    require_once "../config.global.php";
     require_once "getPrace.php";
     try{
         $requestMethod = $_SERVER["REQUEST_METHOD"];

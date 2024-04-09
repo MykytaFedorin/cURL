@@ -1,5 +1,4 @@
 <?php
-require_once "../../../.config/zadanie2/config.global.php";
 function getToken(){    
     $username = $_ENV["USERNAME"];
     $password = $_ENV["PASSWORD"];

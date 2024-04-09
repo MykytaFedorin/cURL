@@ -1,6 +1,10 @@
 <?php
-require_once "../../../.config/zadanie2/config.global.php";
-
+try{
+    require_once "../config.global.php";
+}
+catch(PDOConnectionFailedException $e){
+    echo json_encode(array("message" => $e->getMessage())); 
+}
 // Обработка запр
 $requestMethod = $_SERVER["REQUEST_METHOD"];
 
