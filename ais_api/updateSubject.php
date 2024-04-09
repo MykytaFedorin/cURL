@@ -24,6 +24,7 @@ if (!$id || !$name || !$day || !$room || !$subjectType) {
 }
 
 try {
+    echo json_encode(array("message" => "here"));
     $stmt=$pdo->prepare("SELECT type_id FROM subject_type WHERE type_name=:subject_type");
     $stmt->bindValue(':subject_type', $subjectType, PDO::PARAM_STR);
     $stmt->execute();
@@ -45,7 +46,7 @@ try {
         http_response_code(500);
         echo json_encode(array("message" => "Failed to update subject."));
     }
-} catch (PDOException $e) {
+} catch (Exception $e) {
     http_response_code(500);
     echo json_encode(array("message" => "Database error: " . $e->getMessage()));
 }

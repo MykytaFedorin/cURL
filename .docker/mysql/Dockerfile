@@ -1,9 +1,6 @@
 FROM mysql:8.0
 
-# Устанавливаем переменные окружения для задания пароля root при сборке образа
-ENV MYSQL_ROOT_PASSWORD=qnKfx_82_He@53Knx
-
 # Копируем скрипт инициализации в директорию /docker-entrypoint-initdb.d/
 # Этот скрипт будет выполнен при первом запуске контейнера для настройки базы данных
-COPY init.sql /docker-entrypoint-initdb.d/
+COPY ./init.sql /docker-entrypoint-initdb.d/
 

@@ -92,3 +92,37 @@ $('#subjectTable').on('click', 'td', function() {
         fetchSubjects();
     });
 });
+$(document).ready(function() {
+    $('#subjectTable').on('focusout keydown', 'input', function(event) {
+        if (event.type === 'focusout' || (event.type === 'keydown' && event.keyCode === 13)) {
+            var $input = $(this);
+            var newText = $input.val().trim();
+            var $td = $input.closest('td');
+            $td.text(newText); // Возвращаем текст в ячейку
+
+            var $tr = $td.closest('tr');
+            var rowData = {
+                id: $tr.find('td:eq(0)').text().trim(),
+                name: $tr.find('td:eq(1)').text().trim(),
+                day: $tr.find('td:eq(2)').text().trim(),
+                room: $tr.find('td:eq(3)').text().trim(),
+                subjectType: $tr.find('td:eq(4)').text().trim()
+            };
+
+            // Отправить строку данных в виде JSON на сервер
+            $.ajax({
+                url: 'ais_api/subjects',
+                type: 'PUT',
+                contentType: 'application/json',
+                data: JSON.stringify(rowData),
+                success: function(response) {
+                    console.log(response);
+                },
+                error: function(xhr, status, error) {
+                    console.error('Произошла ошибка при обновлении данных:', error);
+                }
+            });
+        }
+    });
+});
+
