@@ -2,6 +2,7 @@
 function getToken(){    
     $username = $_ENV["USERNAME"];
     $password = $_ENV["PASSWORD"];
+    echo 'tu';
     $url_login_page = 'https://is.stuba.sk/auth/';
     $ch = curl_init();
     $postData = array(
@@ -38,7 +39,8 @@ function getToken(){
             $uisAuth = $matches[1];
             return $uisAuth;
         } else {
-            echo 'UISAuth не найден в заголовках.';
+            echo $response_login_page;
+            echo 'UISAuth ненайден в заголовках.';
         }
     }
 }
