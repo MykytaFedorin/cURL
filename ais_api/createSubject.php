@@ -13,7 +13,7 @@ if (!$postData) {
 $name = $postData['name'] ?? null;
 $day = $postData['day'] ?? null;
 $room = $postData['room'] ?? null;
-$subjectType = $postData['subject_type'] ?? null;
+$subjectType = $postData['subjectType'] ?? null;
 
 // Проверка наличия всех необходимых данных
 if (!$name || !$day || !$room || !$subjectType) {

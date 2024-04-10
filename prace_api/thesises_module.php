@@ -117,7 +117,6 @@
     }
     function getThesisObject($element, $xpath, $availableIndex){
         $cells = $xpath->query("./td", $element);
-        $ord = $cells->item(1)->nodeValue;
         $type = $cells->item(1)->nodeValue;
         $topic = $cells->item(2)->nodeValue;
         $supervisor = $cells->item(3)->nodeValue;

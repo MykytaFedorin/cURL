@@ -8,7 +8,6 @@ catch(PDOConnectionFailedException $e){
 function getToken(){    
     $username = $_ENV["USERNAME"];
     $password = $_ENV["PASSWORD"];
-    echo 'tu';
     $url_login_page = 'https://is.stuba.sk/auth/';
     $ch = curl_init();
     $postData = array(

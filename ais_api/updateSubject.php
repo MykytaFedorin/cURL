@@ -37,17 +37,9 @@ try {
     $stmt->bindValue(':subjectType', $type_id, PDO::PARAM_INT); // Учитывается, что subject_type - это внешний ключ
     $stmt->execute();
 
-    // Проверка успешности выполнения запроса
-    if ($stmt->rowCount() > 0) {
-        // Возврат сообщения об успешном обновлении данных предмета в формате JSON
-        echo json_encode(array("message" => "Subject updated successfully."));
-    } else {
-        http_response_code(500);
-        echo json_encode(array("message" => "Failed to update subject."));
-    }
+    echo json_encode(array("message" => "Subject updated successfully."));
 } catch (Exception $e) {
     http_response_code(500);
     echo json_encode(array("message" => "Database error: " . $e->getMessage()));
 }
 ?>
-
